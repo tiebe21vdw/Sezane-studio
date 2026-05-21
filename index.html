@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sézane is a design studio for warm, layered interiors and sensory event experiences."
+    />
+    <title>Sézane Studio | Creating spaces that tell stories</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Sézane home">
+        <span class="brand__mark">Sézane</span>
+        <span class="brand__line">Design Studio</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img
+          class="hero__image"
+          src="https://images.unsplash.com/photo-1773578639782-2046b150ce28?auto=format&fit=crop&w=2200&q=82"
+          alt="Warm interior with timber floors, soft seating and sculptural light."
+        />
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Interior design and event curation</p>
+          <h1 id="hero-title">Creating spaces that tell stories</h1>
+          <p class="hero__text">
+            Sézane shapes interiors and events into emotional landscapes:
+            warm, layered and deeply sensory.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--light" href="#projects">View projects</a>
+            <a class="button button--ghost" href="#contact">Start a conversation</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-pad" aria-label="Studio introduction">
+        <div class="intro__text">
+          <p class="section-kicker">Our world</p>
+          <h2>Every space holds the potential to become something extraordinary.</h2>
+        </div>
+        <div class="intro__body">
+          <p>
+            At Sézane, we go beyond aesthetics. We create warm, profound and
+            sensational environments that speak to the soul. Each project is a
+            carefully orchestrated composition of texture, color, light and
+            emotion, designed to leave a lasting impression.
+          </p>
+        </div>
+      </section>
+
+      <section class="mood-board" aria-label="Moodboard inspired visual story">
+        <figure class="mood mood--tall">
+          <img
+            src="https://images.unsplash.com/photo-1716850724755-21a55ab68f25?auto=format&fit=crop&w=1000&q=80"
+            alt="Candles glowing on an intimate dinner table."
+          />
+        </figure>
+        <figure class="mood">
+          <img
+            src="https://images.unsplash.com/photo-1772442364436-6ee6e42302a2?auto=format&fit=crop&w=1000&q=80"
+            alt="Sunlight falling across a wooden cabinet and stone object."
+          />
+        </figure>
+        <figure class="mood mood--dark">
+          <img
+            src="https://images.unsplash.com/photo-1770625467884-9372c6a03b4a?auto=format&fit=crop&w=1000&q=80"
+            alt="Dark wooden wall panels with warm backlighting."
+          />
+        </figure>
+        <div class="mood__statement">
+          <span>Warmth</span>
+          <span>Depth</span>
+          <span>Sensation</span>
+        </div>
+      </section>
+
+      <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading section-heading--projects">
+          <div class="projects__intro-copy">
+            <p>
+              A curated selection of interiors, events and installations shaped
+              around atmosphere, intimacy and sensory richness.
+            </p>
+            <ul class="project-signals" aria-label="Project categories">
+              <li>
+                <span>Interiors</span>
+                <strong>Private spaces with warmth and depth</strong>
+              </li>
+              <li>
+                <span>Events</span>
+                <strong>Gatherings curated as sensory rituals</strong>
+              </li>
+              <li>
+                <span>Installations</span>
+                <strong>Material moments that transform a room</strong>
+              </li>
+            </ul>
+          </div>
+          <h2 id="projects-title">Selected spaces, events and installations</h2>
+        </div>
+
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="interior">Interiors</button>
+          <button class="filter-button" type="button" data-filter="event">Events</button>
+          <button class="filter-button" type="button" data-filter="installation">Installations</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card--large" data-category="interior">
+            <button class="project-card__button" type="button" data-project="amber-room">
+              <img
+                src="https://images.unsplash.com/photo-1773578639782-2046b150ce28?auto=format&fit=crop&w=1300&q=80"
+                alt="Layered living space with green seating and timber floors."
+              />
+              <!-- <span class="project-card__meta">Private Residence - Antwerp</span> -->
+              <span class="project-card__title">The Amber Room</span>
+            </button>
+          </article>
+
+          <article class="project-card" data-category="event">
+            <button class="project-card__button" type="button" data-project="solstice-table">
+              <img
+                src="https://images.unsplash.com/photo-1768594266719-ab1569870a1f?auto=format&fit=crop&w=1200&q=80"
+                alt="Elegant event table with candles, plants and soft fabric."
+              />
+              <!-- <span class="project-card__meta">Dinner Experience - Ghent</span> -->
+              <span class="project-card__title">Table for Solstice</span>
+            </button>
+          </article>
+
+          <article class="project-card" data-category="installation">
+            <button class="project-card__button" type="button" data-project="nocturne">
+              <img
+                src="https://images.unsplash.com/photo-1770625467884-9372c6a03b4a?auto=format&fit=crop&w=1200&q=80"
+                alt="Dark geometric wooden wall texture with atmospheric light."
+              />
+              <!-- <span class="project-card__meta">Material Installation - Brussels</span> -->
+              <span class="project-card__title">Nocturne Panels</span>
+            </button>
+          </article>
+
+          <article class="project-card" data-category="interior">
+            <button class="project-card__button" type="button" data-project="linen-apartment">
+              <img
+                src="https://images.unsplash.com/photo-1772442364436-6ee6e42302a2?auto=format&fit=crop&w=1200&q=80"
+                alt="Warm sunlight on sculptural interior objects and wood."
+              />
+              <!-- <span class="project-card__meta">Apartment - Mechelen</span> -->
+              <span class="project-card__title">The Linen Apartment</span>
+            </button>
+          </article>
+
+          <article class="project-card project-card--wide" data-category="event">
+            <button class="project-card__button" type="button" data-project="quiet-ceremony">
+              <img
+                src="https://images.unsplash.com/photo-1773913106047-d8e205a63e4b?auto=format&fit=crop&w=1400&q=80"
+                alt="Table setting with floral centerpiece and lit candles."
+              />
+              <!-- <span class="project-card__meta">Brand Launch - Knokke</span> -->
+              <span class="project-card__title">Quiet Ceremony</span>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="studio section-pad" id="studio" aria-labelledby="studio-title">
+        <div class="studio__media">
+          <img
+            src="https://images.unsplash.com/photo-1716850724755-21a55ab68f25?auto=format&fit=crop&w=1200&q=80"
+            alt="Warm candlelight on a layered dining table."
+          />
+        </div>
+        <div class="studio__content">
+          <p class="section-kicker">Studio story</p>
+          <h2 id="studio-title">Where vision meets emotion</h2>
+          <p>
+            Founded on the belief that design should move people, Sézane
+            transforms ordinary spaces into extraordinary experiences. Our
+            multidisciplinary approach combines interior design expertise with
+            event curation mastery, creating cohesive narratives that captivate
+            and inspire.
+          </p>
+          <p>
+            We work closely with our clients to understand their vision, then
+            elevate it through our signature blend of warmth, depth and sensory
+            richness. Every detail matters, every choice has intention, and
+            every space tells a unique story.
+          </p>
+          <dl class="studio__facts">
+            <div>
+              <dt>Focus</dt>
+              <dd>Interiors, events, installations</dd>
+            </div>
+            <div>
+              <dt>Language</dt>
+              <dd>Texture, ritual, light, emotion</dd>
+            </div>
+            <div>
+              <dt>Process</dt>
+              <dd>Concept, curation, detailing, execution</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="contact__intro">
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">Tell us about the feeling you want to create.</h2>
+          <p>
+            Share a room, an event, a moment or a mood. We will help shape it
+            into a sensory story with intention and depth.
+          </p>
+          <a class="contact__mail" href="mailto:hello@sezanestudio.be">hello@sezanestudio.be</a>
+        </div>
+
+        <form class="contact-form" aria-label="Contact form">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span>Project type</span>
+            <select name="project-type" required>
+              <option value="">Select one</option>
+              <option>Interior design</option>
+              <option>Event curation</option>
+              <option>Installation</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button button--dark" type="submit">Send inquiry</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sézane Studio</p>
+      <p>Interior design - Event curation - Sensory spaces</p>
+      <p class="site-footer__credit">Demo imagery sourced from Unsplash.</p>
+    </footer>
+
+    <dialog class="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close project">
+        <span></span>
+        <span></span>
+      </button>
+      <img class="dialog-image" src="" alt="" />
+      <div class="dialog-copy">
+        <p class="section-kicker dialog-type"></p>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-location"></p>
+        <p class="dialog-description"></p>
+        <ul class="dialog-tags" aria-label="Project atmosphere"></ul>
+        <div class="dialog-gallery" aria-label="Project impressions"></div>
+        <div class="dialog-details">
+          <div>
+            <h3>Atmosphere</h3>
+            <p class="dialog-atmosphere"></p>
+          </div>
+          <div>
+            <h3>Materials</h3>
+            <p class="dialog-materials"></p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
