@@ -1,1 +1,1 @@
-# S-zane-studio
+# Sezane-studio
